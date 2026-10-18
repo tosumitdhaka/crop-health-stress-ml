@@ -1,0 +1,62 @@
+{
+  "model": "logreg",
+  "features": [
+    "ndvi_mean",
+    "ndvi_std",
+    "red_edge_1",
+    "red_edge_2",
+    "nir_reflectance",
+    "soil_brightness",
+    "canopy_density",
+    "moisture_index"
+  ],
+  "threshold": 0.47,
+  "params": {
+    "C": "13.921548533046511",
+    "class_weight": "balanced",
+    "dual": "False",
+    "fit_intercept": "True",
+    "intercept_scaling": "1",
+    "l1_ratio": "0.0",
+    "max_iter": "2000",
+    "n_jobs": "None",
+    "penalty": "l1",
+    "random_state": "42",
+    "solver": "liblinear",
+    "tol": "0.0001",
+    "verbose": "0",
+    "warm_start": "False"
+  },
+  "severity_tiers": [
+    [
+      "Low",
+      0.0
+    ],
+    [
+      "Moderate",
+      0.25
+    ],
+    [
+      "High",
+      0.5
+    ],
+    [
+      "Critical",
+      0.75
+    ]
+  ],
+  "seed": 42,
+  "test_metrics": {
+    "threshold": 0.47,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "roc_auc": 1.0,
+    "average_precision": 1.0,
+    "tn": 156,
+    "fp": 0,
+    "fn": 0,
+    "tp": 84
+  }
+}
